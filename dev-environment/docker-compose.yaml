@@ -1,0 +1,15 @@
+name: edil-caisse
+
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  edil-caisse-postgres:
+    image: postgres:18.6
+    container_name: edil-caisse-postgres
+    environment:
+      POSTGRES_USER: EDIL
+      POSTGRES_PASSWORD: EDIL
+    ports:
+      - 5432:5432
