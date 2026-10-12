@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "04f6ef4d-cf90-4e38-b83c-a43b574b9894"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -59,7 +60,8 @@
               "buildTarget": "edil-caisse:build:production"
             },
             "development": {
-              "buildTarget": "edil-caisse:build:development"
+              "buildTarget": "edil-caisse:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

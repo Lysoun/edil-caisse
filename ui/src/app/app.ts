@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component, signal} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {apiHttpResource} from './api-http-resource';
 
 @Component({
   imports: [RouterOutlet],
@@ -9,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('edil-caisse');
+  public readonly serverConnectionTestResource = apiHttpResource('json/kotlinx-serialization');
 }
