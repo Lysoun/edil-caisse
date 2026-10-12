@@ -26,8 +26,7 @@ dependencies {
     implementation(ktorLibs.server.routingOpenapi)
     implementation(libs.exposed.core)
     implementation(libs.exposed.r2dbc)
-    implementation(libs.h2database.h2)
-    implementation(libs.h2database.r2dbc)
+    implementation(libs.postgresqldatabase.r2dbc)
     implementation(libs.logback.classic)
 
     testImplementation(kotlin("test"))

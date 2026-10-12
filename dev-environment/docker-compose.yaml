@@ -11,5 +11,6 @@ services:
     environment:
       POSTGRES_USER: EDIL
       POSTGRES_PASSWORD: EDIL
+      POSTGRES_DB: edil-caisse
     ports:
       - 5432:5432
