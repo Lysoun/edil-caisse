@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - io.lysoun.HttpKt.configureHttp
+      - io.lysoun.SerializationKt.configureSerialization
+      - io.lysoun.ExposedKt.configureExposed
+      - io.lysoun.RoutingKt.configureRouting
